@@ -1,0 +1,39 @@
+{% extends 'baselogin.html' %}
+{% block title %} Patient details{% endblock title %}
+{% block form %}
+
+
+
+      <div class="row">
+            
+            <h1><center>Patient Details</center></h1>
+            <div class="card p-3">
+
+
+
+      <table class="table table-dark">
+           
+            <tr>
+                <th>Patient Name</th>
+                <th>SRF ID</th>
+                <th>Bed Type</th>
+                <th>Hospital Code</th>
+                <th>Phone num</th>
+                <th>Address</th>
+            </tr>
+      
+
+            {% for cell in data %}
+            <tr>
+            <td>{{cell.pname}}</td>    
+            <td>{{cell.patientsrfid}}</td>    
+            <td>{{cell.bedtype}}</td>
+            <td>{{cell.hcode}}</td>
+            <td>{{cell.pphone}}</td>   
+            <td>{{cell.paddress}}</td>
+            </tr>
+            {% endfor %}
+        
+   </div>
+{% endblock form %}
+

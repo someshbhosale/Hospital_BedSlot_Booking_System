@@ -1,0 +1,26 @@
+{% extends "navbar.html" %} {% block title %} Discharge {% endblock title %}
+{% block body %}
+
+<form action="/dischargendelete" method="post">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control mt-2"
+        name="hospitalmail"
+        value="{{current_user.email}}"
+        readonly
+        required
+      />
+    </div>
+    <br><br><br><br><br><br>
+    <div class="form-group">
+        <select id="bedtype" name="bedtype" class="form-control" required>
+          <option selected>Choose Patient Name</option>
+          {% for cell in data %}
+          <option value="srfid" name="srfid">{{cell.srfid}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button class="btn btn-info" type="submit">Discharge</button>
+      </form>
+      {% endblock %}

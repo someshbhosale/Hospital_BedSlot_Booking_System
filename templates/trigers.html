@@ -1,0 +1,43 @@
+{% extends 'adminbaselogin.html' %}
+{% block title %} Triggers  {% endblock title %}
+{% block form %}
+
+
+
+<div class="row">
+            
+  <!--<h1><center>Trigger Details</center></h1>-->
+  <div class="card p-3">
+    <table class="table table-dark">
+     <tr>      
+      <th>Hospital Code</th>
+      <th>Normal Bed</th>
+      <th>HICU Bed</th>
+      <th>I.C.U Bed</th>
+      <th>Ventilator Bed</th>
+      <th>Action</th>
+      <th>DATE</td>
+    </tr>
+  {% for post in query %}
+   <tr>
+      <td>{{post.hcode}}</td>
+      <td>{{post.normalbed}}</td>
+      <td>{{post.hicubed}}</td>
+      <td>{{post.icubed}}</td>
+      <td>{{post.vbed}}</td>
+      <td>{{post.querys}}</td>
+      <td>{{post.date}}</td>
+    </tr>
+   
+  {% endfor %}
+   
+  
+</table>
+
+
+</div>
+</div>
+</div>
+
+
+{% endblock form %}

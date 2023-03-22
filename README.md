@@ -7,3 +7,26 @@ Admin adds hospital users to update databases, while hospital users add/update b
 
 Recommendation system is used to suggest the best hospitals based on the city of the hospital entered. The model is trained with many data of the hospitals in the country. This would be very useful to the users to sort out the best hospital in their location. Analysis part would be much more beneficial for the users and can book the bed in the hospital to get better treatment. The accuracy of the model is 96%. It gives the most accurate result according to the user. When there
 is a random hospital which is not there in the dataset, System gives an error. We can improvise the accuracy to 99% by training on various datasets.
+
+## Screenshots
+
+### Home 
+![ALT](/snapshots/home.png)
+
+### Adding Hospital User
+![ALT](/snapshots/HospitalUser.png)
+
+### Adding Hospital Data
+![ALT](/snapshots/HospitalData.png)
+
+### Book Hospital Bed Slot 
+![ALT](/snapshots/BookSlot.png)
+
+### Recommend Hospital
+![ALT](/snapshots/Recommend.png)
+
+### Account Created
+![ALT](/snapshots/Account.png)
+
+### Discharge Report
+![ALT](/snapshots/Report.png)
